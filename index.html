@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: sans-serif;
+            box-sizing: border-box;
         }
 
         .hero{
@@ -26,8 +27,7 @@
             padding: 20px 0;
             align-items: center;
             justify-content: space-between;
-            
-
+           
         }
 
         nav ul li{
@@ -114,6 +114,15 @@
             
         }
 
+        #skill-heading{
+            font-weight: bold;
+            text-align:center;
+            margin-top: 30px;
+            font-size: 30px;
+            
+            
+        }
+
         .html{
             width: 8%;
             height: 15%;
@@ -157,10 +166,10 @@
         }
 
 
-        .work-heading{
+        #work-heading{
             font-weight: bold;
             text-align: left;
-            margin-top: 40px;
+            margin-top: 10%;
             font-size: 30px;
             padding: 20px;
             
@@ -225,6 +234,10 @@
             text-decoration: none;
             color: #000;
         }
+
+        html{
+            scroll-behavior: smooth;
+        }
    
     </style>
 </head>
@@ -233,8 +246,9 @@
         <nav>
             <span>MSM</span>
             <ul>
-                <li><a href="./Home-Page.html">HOME</a></li>
-                <li><a href="#">WORK</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#skill-heading">SKILLS</a></li>
+                <li><a href="#work-heading">WORK</a></li>
         
             </ul>
         </nav>
@@ -253,11 +267,11 @@
                 </div>
                 <img src="https://i.ibb.co/TWdc38m/3835.png" alt="abstract shape" class="shape">
         </div>
-<!--
-        <div class="skill-heading">
-            <p>SKILLS</p>
-        </div>
--->
+
+       
+         <div id="skill-heading">
+        <p>Skills</p>
+    </div>
         <div class="skills">
             <img src="https://i.ibb.co/mFr5Cwv/logo-html-5-512.png" alt="html 5 icon" class="html">
             <img src="https://i.ibb.co/0DNk8wz/css-color.png" alt="css" class="css">
@@ -268,7 +282,7 @@
         </div>
         
     </div>
-    <div class="work-heading">
+    <div id="work-heading">
         <p>Latest Work...</p>
     </div>
     <div class="work">
