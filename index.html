@@ -13,7 +13,7 @@
         }
 
         .hero{
-            position: relative;
+            
             width: 100%;
             height: 100vh;
             background: #eff4fd;
@@ -84,7 +84,7 @@
             font-weight: bold;
             color: #000;
         
-            font-size: 30px;
+            font-size: 22px;
             border: 5px solid black;
             padding: 3px;
            
@@ -93,7 +93,7 @@
         .shape{
             width: 40%;
             height: 80%;
-            position:absolute;
+            
             bottom: 0;
             right: 100px;
         }
@@ -105,16 +105,18 @@
         
         .skills{
             display: flex;
-            justify-content: center;
+            justify-content:space-around;
             flex-wrap: wrap;
             background: #eff4fd;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            margin-top: 5%;
             
         }
 
         .html{
             width: 8%;
             height: 15%;
-            margin-left: 8%;
             
             padding: 0 10px;
         }
@@ -154,12 +156,76 @@
             padding: 0 10px;
         }
 
-        .skill-heading{
+
+        .work-heading{
             font-weight: bold;
-            text-align: center;
-            padding: 40px;
+            text-align: left;
+            margin-top: 40px;
+            font-size: 30px;
+            padding: 20px;
+            
         }
 
+        footer{
+            background-color: #000;
+            box-sizing: border-box;
+            margin-top: 15%;
+            height: 50px;
+
+        }
+
+        .github{
+            width: 38px;
+            padding-top: 3px;
+
+        }
+
+        .work{
+            display: flex;
+           
+            background:#fff;
+            justify-content: space-around;
+            
+        }
+
+        .work img{
+            width:300px;
+            max-width: 300px;
+            height:80%;
+            padding: 20px;
+            vertical-align: top;
+            margin-top: 10%;
+            border-radius: 5px;
+            border: 1px solid #000;
+        }
+
+        .desc{
+            display: flex;
+            background:#fff;
+            justify-content: space-around;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .code{
+            display: flex;
+            background:#fff;
+            justify-content: space-around;
+            text-align: center;
+            
+        }
+
+        .code a{
+            
+            color: #000;
+        }
+
+        .desc a{
+            text-decoration: none;
+            color: #000;
+        }
+   
     </style>
 </head>
 <body>
@@ -187,9 +253,11 @@
                 </div>
                 <img src="https://i.ibb.co/TWdc38m/3835.png" alt="abstract shape" class="shape">
         </div>
+<!--
         <div class="skill-heading">
             <p>SKILLS</p>
         </div>
+-->
         <div class="skills">
             <img src="https://i.ibb.co/mFr5Cwv/logo-html-5-512.png" alt="html 5 icon" class="html">
             <img src="https://i.ibb.co/0DNk8wz/css-color.png" alt="css" class="css">
@@ -200,6 +268,32 @@
         </div>
         
     </div>
+    <div class="work-heading">
+        <p>Latest Work...</p>
+    </div>
+    <div class="work">
+        
+            <a href="https://magenta-alpaca-a3fd1e.netlify.app"><img src="https://i.ibb.co/zF2f6wX/43-DC7-A83-7-BA6-485-E-9-E1-B-553-D0-D7674-AD.jpg" alt=""></a>
+            <a href="https://velvety-queijadas-8c9285.netlify.app"><img src="https://i.ibb.co/5TPvjRY/956-E44-CB-35-B4-4-A68-9627-3221527612-DD.jpg" alt=""></a>
+            <a href="https://heroic-melba-fe99d9.netlify.app"><img src="https://i.ibb.co/M1t984L/FA4-C1-E32-3-B64-41-BC-A73-A-61-A8-FCB289-D2.jpg" alt=""></a>
+        
+    </div>
+    <div class="desc">
+        <a href="https://magenta-alpaca-a3fd1e.netlify.app">Promotional</a>
+        <a href="https://velvety-queijadas-8c9285.netlify.app">Newsletter</a>
+        <a href="https://heroic-melba-fe99d9.netlify.app">Transactional</a>
+    </div>
+    <div class="code">
+        <a href="https://raw.githubusercontent.com/smithmarlo/HTML-Emails/main/promotional.html">Code</a>
+        <a href="https://raw.githubusercontent.com/smithmarlo/HTML-Emails/main/newsletter.html">Code</a>
+        <a href="https://raw.githubusercontent.com/smithmarlo/HTML-Emails/main/transactional.html">Code</a>
+    </div>
+    <footer>
+        <div>
+            <a href="https://github.com/smithmarlo"><img src="https://i.ibb.co/1R2ZD0C/606964-github-4096x4096.png" alt="" class="github"></a>
+
+        </div>
+    </footer>
     
 </body>
 </html>
